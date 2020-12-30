@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Redirect} from "react-router-dom";
 
 class Login extends Component {
     constructor(props) {
@@ -29,7 +28,7 @@ class Login extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="loginStyle">
                 <input type="text" placeholder="Enter user name" onChange={e => this.setState({ name: e.target.value })} value={this.state.name}></input><br />
                 <input type="password" placeholder="Enter password" onChange={e => this.setState({ password: e.target.value })} value={this.state.password}></input><br />
                 <button type="submit" onClick={this.handlerSubmit}>Login</button>

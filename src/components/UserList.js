@@ -7,7 +7,7 @@ class UserList extends Component {
             <div>
                 <h1>Dashboard : </h1>
                 {PostData.user.map((post)=>{
-                    return <React.Fragment>
+                     return <React.Fragment>
                         <div>Name is : {post.name}</div>
                         <div>Age is : {post.age}</div>
                         <div>Gender is : {post.gender}</div>
